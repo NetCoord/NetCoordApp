@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Franklin Gothic";
+  src: url("../assets/fonts/FranklinGothic-Heavy.woff2") format("woff2"),
+    url("../assets/fonts/FranklinGothic-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Interface";
+  src: url("../assets/fonts/HelveticaNeueInterface-Regular.woff2")
+      format("woff2"),
+    url("../assets/fonts/HelveticaNeueInterface-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

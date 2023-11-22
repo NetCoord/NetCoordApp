@@ -1,0 +1,100 @@
+@import "./fonts";
+@import "./variable";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue Interface";
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+.content {
+  overflow: auto;
+  min-height: calc(100vh - 226px);
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fixed-center {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-grey {
+  color: #949494;
+}
+.text-blue {
+  color: #0773c2;
+}
+.text-pink {
+  color: #d862d8;
+}
+h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.text-center {
+  text-align: center;
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.page-wrapper {
+  padding: 8px 16px;
+}
+.w-100 {
+  width: 100%;
+}
+.vm--modal {
+  border-radius: 10px !important;
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0 !important;
+}
+.is-danger {
+  color: red;
+}
+
+.select-wrapper {
+  width: 100%;
+
+  & ::v-deep .vs__dropdown-toggle {
+    background: black;
+  }
+  &.white-bg ::v-deep .vs__dropdown-toggle {
+    background: white;
+  }
+
+  --vs-controls-color: #ff3464;
+  --vs-border-color: #ff3464;
+
+  --vs-dropdown-bg: #282c34;
+  --vs-dropdown-color: #cc99cd;
+  --vs-dropdown-option-color: #cc99cd;
+
+  --vs-selected-bg: #ff3464;
+  --vs-selected-color: #eeeeee;
+
+  --vs-search-input-color: #eeeeee;
+
+  --vs-dropdown-option--active-bg: #664cc3;
+  --vs-dropdown-option--active-color: #eeeeee;
+}

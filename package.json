@@ -1,0 +1,53 @@
+{
+  "name": "netcoord",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "serve-https": "vue-cli-service serve --https true"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
+    "cli": "^1.0.1",
+    "firebase": "^8.6.1",
+    "moment": "^2.29.1",
+    "register-service-worker": "^1.7.2",
+    "skeleton-loader-vue": "^1.0.10",
+    "vue": "^2.7.15",
+    "vue-google-adsense": "^1.9.3",
+    "vue-js-modal": "^2.0.1",
+    "vue-page-transition": "^0.2.2",
+    "vue-router": "^3.2.0",
+    "vue-script2": "^2.1.0",
+    "vue-scroll-picker": "^0.7.1",
+    "vue-select": "^3.18.3",
+    "vue-slick-carousel": "^1.0.6",
+    "vue-spinner": "^1.0.4",
+    "vue-stepper": "^1.0.11",
+    "vue-toast-notification": "^0.6.2",
+    "vue-toggles": "^1.1.4",
+    "vue2-datepicker": "^3.10.4",
+    "vue2-google-maps": "^0.10.7",
+    "vuelidate": "^0.7.7",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-pwa": "~5.0.0",
+    "@vue/cli-service": "^5.0.8",
+    "axios": "^0.18.0",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.1",
+    "vue-cli-plugin-axios": "~0.0.4",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

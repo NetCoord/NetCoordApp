@@ -1,0 +1,134 @@
+@import "./variable";
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 148px);
+  background-image: url('../assets/images/login-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    & > * + * {
+      margin-top: 0.2rem;
+    }
+
+    input {
+      min-height: 40px;
+      background: rgba(255,255,255,0.4);
+      padding: 0 0.5rem;
+      font-size: 1em;
+      border: none;
+      transition: 0.07s;
+      color: white;
+
+      &:focus{
+        outline: 1px solid $primary;
+      }
+
+      &::placeholder {
+        color: black;
+        opacity: 1;
+      }
+      
+      &:-ms-input-placeholder {
+        color: black;
+      }
+      
+      &::-ms-input-placeholder {
+        color: black;
+      }
+    }
+    .reset-pwd {
+      width: fit-content;
+      background: none;
+      outline: none;
+      border: none;
+      color: $primary;
+      margin: 0.5rem;
+      font-size: 1em;
+    }
+
+    .input-line {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      grid-gap: 1rem;
+      gap: 1rem;
+      padding: 0.4rem 1rem;
+      align-items: center;
+      background: rgba(255,255,255,0.4);
+      min-height: 48px;
+
+      & > label {
+        color: black;
+        font-weight: 600;
+        font-size: 1em;
+      }
+      & > input {
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 4px;
+        color: black;
+      }
+    }
+
+  }
+  .action {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    button {
+      height: 40px;
+      background: rgba(255,255,255,0.25);
+      color: white;
+      font-size: 1em;
+      border-radius: 2rem;
+      border-width: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:nth-last-of-type(1) {
+        border-color: $primary;
+      }
+      &:nth-last-of-type(2) {
+        border-color: rgba(255, 255, 255, 0.25);
+      }
+      &:disabled {
+        color: #666666;
+      }
+    }
+
+    .or {
+      position: relative;
+      height: 40px;
+      width: 100%;
+      line-height: 40px;
+      text-align: center;
+
+      &::before,
+      &::after {
+        position: absolute;
+        width: 160px;
+        height: 1px;
+        top: 22px;
+        background-color: #aaa;
+        content: '';
+      }
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      }
+    }
+    
+  }
+}
